@@ -260,6 +260,7 @@ legend {
   display: none; }
 
 .section{
+    display: grid;
     width: 600px;
     background-color: #113d3c;
     padding: 30px;
@@ -269,15 +270,14 @@ legend {
     border-radius: 10px;
     color: aliceblue;
     box-shadow: 10px 10px 20px 10px #0000006e;
-}
+  }
 
 .logInControls{
-    display: block;
+    display: grid;
     width: 100%;
     background-color: rgba(17, 61, 60, 0.745);
     font-family: "Alegreya Sans";
-    height: 50px;
-    
+    height: 50px;    
     font-size: 20px;
     margin-bottom: 15px;
     border-radius: 10px;
@@ -285,6 +285,8 @@ legend {
     color: #e7e7e7;
 
 }
+
+
 
 #button{
     display: block;
@@ -391,7 +393,11 @@ footer {
     display: block; }
   .logo {
     display: none;
-    transition: 2s; } }
+    transition: 2s; } 
+  .section{
+    width: 400px;
+  }
+}
 
 @media (max-width: 768px) and (max-width: 286px) {
   .tittleIndex {
@@ -403,9 +409,16 @@ footer {
   .tittleIndex {
     font-size: 13px; } }
 
+@media (max-width: 768px) and (max-width: 482px) {
+    .section{
+      width: 300px;
+    }}
+
 @media (max-width: 768px) and (max-width: 448px) {
   .tittlePage {
-    font-size: 60px; } }
+    font-size: 60px; } 
+
+  }
 
 @media (max-width: 768px) and (max-width: 394px) {
   .tittlePage {
